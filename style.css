@@ -1,6 +1,7 @@
 * {
     font-family: 'Noto Sans';
     color: var(--color1);
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -47,6 +48,7 @@ body {
     margin: auto;
     padding: 12px;
     width: 80vw;
+    max-width: 500px;
     border: 1px solid var(--color3);
     border-radius: 20px;
 }
@@ -68,13 +70,21 @@ a.dev {
     margin: 40px auto;
 }
 
+div.demo {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
 a.demo {
     width: 100%;
+    position: relative;
+    left: 0;
     margin: 0 20px;
     font-size: 20px;
 }
 
 a.end {
     margin-top: 10px;
-    margin-bottom: 90vh;
+    margin-bottom: 16px;
 }
