@@ -1,57 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:100,300,regular,500,700,800,900"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прототип меню</title>
+    <title>Menu by ThisDevSasha</title>
 </head>
+
 <body>
-    <h1>Меню для кафе</h1>
-    <div class="bg"></div><div class="overlay"> 
+    <header>
+        <video src="./video.mp4" autoplay muted loop class="overlay"></video>
+        <div class="header__title">
+            <h1>Меню прямо в телеофне</h1>
+            <p>Наше меню — это то, что вам нужно</p>
+        </div>
+        <button class="mainButton" id="~goTo[._start]">Почему?</button>
+    </header>
 
-    </div>
-    <h2>Прайс-лист:</h2>
-    <div class="price-list note">
-        <h3>Pro</h3>
-        <ul>
-            <li>15$ в месяц</li>
-            <li>50$ навсегда</li>
-        </ul>
-    
-        <h3>Mini</h3>
-        <ul>
-            <li>10$ в месяц</li>
-            <li>30$ навсегда; изменение меню - 5$</li>
+    <div class="info _start">
+        <h2 class="info__title">Плюсы онлайн меню:</h2>
+        <ul class="info__list">
+            <li>
+                <span class="_main">Современно:</span> <br> Телефоны стали неотъемлемой частью повседневной жизни
+            </li>
+            <li>
+                <span class="_main">Уникально:</span> <br> Выделитесь среди конкурентов с помощью инновационного подхода
+            </li>
+            <li>
+                <span class="_main">Удобно:</span> <br> Вы сможете проще обслуживать посетителей;
+            </li>
         </ul>
     </div>
 
-    <h2>В чём отличие Pro от Mini?</h2>
-    <div class="price-list note">
-        <h3>В Pro есть:</h3>
-        <ul>
-            <li>Вызов официанта к столу</li>
-            <li>Изменение меню в гугл таблицах</li>
-            <li>Более качественная работа навигационной панели</li>
-            <li>Качественное отображение на компьютерах</li>
-            <br>
-            (Цена больше всего на 5$)
-        </ul>
-        <h3>Из менее важного:</h3>
-        <ul>
-            <li>В pro при покупке навсегда вы можете сами менять меню</li>
-            <li>Возможность изменить количество блюд из корзины</li>
-            <li>QR-Коды на каждый стол, по которым будет определяться стол посетителя</li>
-        </ul>
+    <div class="quote">
+        Интровертам и малообщительным людям будет лучше к вам заходить, так как заказ происходит прямо с сайта
     </div>
-    <a href="https://is.gd/thisDevSasha" class="dev">Портфолио разработчика </a>
 
-    <h2>Посмотреть демо-версию:</h2>
-    <div class="demo">
-        <a href="https://thissasha.github.io/menuPro/" class="demo">Pro версия</a>
-        <a href="https://thissasha.github.io/menu/" class="end demo">Mini версия</a>
+    <div class="info">
+        <p>Меню, которое мы вам предоставляем отличается от других своей доступной ценой. В отличии от конкурентов мы
+            предлагаем сайт, построенный на прототипе, что улучшает цену</p>
     </div>
+
+    <div class="price">
+        <h2>Прайс-лист</h2>
+        <div class="price__slider">
+            <div class="price__card">
+                <div class="card__price _left">15$ <span class="_textMini">в месяц</span></div>
+                <hr>
+                <div class="card__price _right">40$ <span class="_textMini">навсегда*</span></div>
+                <h3 class="card__title">Basic</h3>
+                <p class="card__description">Самая доступная по цене и в связи с этим ограниченная версия. Достойное
+                    качество дизайна и небольшой функционал. Идеально подходит для небольших заведений</p>
+                <h3 class="card__title">Включает в себя:</h3>
+                <ul class="card__list">
+                    <li class="card__function">
+                        <i class="fas fa-xmark"></i>
+                        <p>Google Таблица с меню</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-xmark"></i>
+                        <p>Вызов официанта</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-xmark"></i>
+                        <p>Возможность отправить заказ</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-check"></i>
+                        <p>Несколько языков</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-xmark"></i>
+                        <p>Улучшенные анимации</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="price__card">
+                <div class="card__price _left">25$ <span class="_textMini">в месяц</span></div>
+                <hr>
+                <div class="card__price _right">100$ <span class="_textMini">навсегда</span></div>
+                <h3 class="card__title">Pro</h3>
+                <p class="card__description">Наилучшее соотношение цена/качество. Вполне качественный интерфейс,
+                    самостоятельная настройка меню и увеличенный функционал</p>
+                <h3 class="card__title">Включает в себя:</h3>
+                <ul class="card__list">
+                    <li class="card__function">
+                        <i class="fas fa-check"></i>
+                        <p>Google Таблица с меню</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-xmark"></i>
+                        <p>Вызов официанта</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-xmark"></i>
+                        <p>Возможность отправить заказ</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-check"></i>
+                        <p>Несколько языков</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-check"></i>
+                        <p>Улучшенные анимации</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="price__card">
+                <div class="card__price _left">50$ <span class="_textMini">в месяц</span></div>
+                <hr>
+                <div class="card__price _right">220$ <span class="_textMini">навсегда</span></div>
+                <h3 class="card__title">Premium</h3>
+                <p class="card__description">В эту версию входит всё, что может пригодиться. Наивысшее качество
+                    анимаций, максимально удобный и продуманный интерфейс. Вы получите QR-Коды к столам, чтобы можно
+                    было сделать заказ онлайн</p>
+                <h3 class="card__title">Включает в себя:</h3>
+                <ul class="card__list">
+                    <li class="card__function">
+                        <i class="fas fa-check"></i>
+                        <p>Google Таблица с меню</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-check"></i>
+                        <p>Вызов официанта</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-check"></i>
+                        <p>Возможность отправить заказ</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-check"></i>
+                        <p>Несколько языков</p>
+                    </li>
+                    <li class="card__function">
+                        <i class="fas fa-check"></i>
+                        <p>Улучшенные анимации</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        by <a href="https://tinyurl.com/thisSasha/myPortfolio"></a>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/2c09f7fb88.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

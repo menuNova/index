@@ -1,97 +1,249 @@
-* {
-    font-family: 'Noto Sans';
-    color: var(--color1);
-    overflow-x: hidden;
-}
-
-h1, h2, h3 {
-    font-family: 'Comfortaa';
-}
-
-h1, h2 {
-    text-align: center;
-    margin: 24px 0;
-}
-
-.overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.613);
+:root {
+    --bg-color: #f9f9f9;
+    --main-color: #333;
+    --accent-color: #88222c;
+    --color1: #666;
+    --color2: #ddd;
+    --color3: #333;
+    --color-hover-text: white;
+    --color-quote-background: rgb(245, 245, 245);
 }
 
 body {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    padding: 0 16px;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--bg-color);
 }
 
-.bg {
-    position: fixed;
-    z-index: -1;
+._left {
+    text-align: left;
+}
+
+._right {
+    text-align: right;
+}
+
+h2 {
+    color: #151515;
+    font-size: 2em;
+    margin-bottom: 32px;
+    line-height: 1;
+    text-align: center;
+}
+
+* {
+    max-width: 100%;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    line-height: 1.4;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0.2;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('./image.png');
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-:root {
-    --color2: rgb(17, 17, 17);
-    --color1: rgb(232, 232, 232);
-    --color2-1: rgb(208, 191, 218);
-    --color3: rgb(255, 13, 255);
-}
-
-
-
-
-.note {
-    margin: auto;
-    padding: 12px;
-    width: 80vw;
-    max-width: 500px;
-    border: 1px solid var(--color3);
-    border-radius: 20px;
-}
-
-.price-list, .price-list * {
-    background-color: var(--color2-1);
-    color: var(--color2);
-}
-
-
-a {
-    display: inline-block;
-}
-
-a.dev {
-    text-align: center;
+    height: 100vh;
     width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* ========================= */
+/*          Header          */
+/* ========================= */
+header {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+}
+
+.header__title h1 {
+    font-size: 3em;
+    margin: 0;
+    line-height: 1;
+    color: var(--main-color);
+}
+
+.header__title p {
     font-size: 1.5em;
-    margin: 40px auto;
+    line-height: 1;
+    color: var(--color1);
 }
 
-div.demo {
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
+/* ========================= */
+/*        Global           */
+/* ========================= */
+.mainButton {
+    width: 70%;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 28px;
+    border: 1px solid var(--color3);
+    margin-top: 20px;
+    background: transparent;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-a.demo {
-    width: 100%;
-    position: relative;
-    left: 0;
-    margin: 0 20px;
-    font-size: 20px;
+.mainButton:hover {
+    background-color: var(--color3);
+    color: var(--color-hover-text);
 }
 
-a.end {
-    margin-top: 10px;
-    margin-bottom: 16px;
+._main {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.quote {
+    padding: 20px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--color-quote-background);
+    border-radius: 16px;
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+/* ========================= */
+/*          Info            */
+/* ========================= */
+.info {
+    padding: 40px 0;
+    text-align: left;
+}
+
+.info__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+
+/* ========================= */
+/*        Differents        */
+/* ========================= */
+.differents {
+    padding: 40px 0;
+    text-align: left;
+}
+
+.differents h2 {
+    font-size: 1em;
+    text-align: left;
+}
+
+.differents__text {
+    color: var(--color1);
+}
+
+/* ========================= */
+/*          Price           */
+/* ========================= */
+.price {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.price__card {
+    background-color: var(--bg-color);
+    border: 1px solid var(--color2);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.price__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.price__slider {
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    
+}
+
+
+
+.card__price {
+    font-size: 2em;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+._textMini {
+    font-size: 0.5em;
+    color: var(--color1);
+}
+
+.card__title {
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-align: left;
+    color: var(--accent-color);
+}
+
+.card__description {
+    font-size: 1em;
+    color: var(--color1);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.card__function {
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.card__function i {
+    top: 0;
+    margin-right: 10px;
+    color: #655500;
+}
+
+hr {
+    border: 1px solid var(--color2);
+    margin: 8px 0;
+    transform: rotate(-8deg);
+}
+
+.card__function p {
+    margin: 0;
+    text-align: left;
 }
