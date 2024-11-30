@@ -52,6 +52,11 @@ h2 {
     z-index: -1;
 }
 
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
 /* ========================= */
 /*          Header          */
 /* ========================= */
@@ -170,12 +175,11 @@ header {
     transition: transform 0.3s, box-shadow 0.3s;
     flex: 0 0 auto;
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.price__card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
 
 
 .price__slider {
@@ -185,8 +189,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-    flex-direction: row;
-    
+    flex-direction: row;   
 }
 
 
@@ -248,6 +251,23 @@ hr {
     text-align: left;
 }
 
+.card__button {
+    border-radius: 16px;
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+}
+
+.card__button {
+    color: var(--color3);
+    text-decoration: none;
+    width: 100%;
+    transition: 200ms;
+}
+
+.card__button:active {
+    background-color: var(--accent-color);
+    color: white;
+}
 
 /* ========================= */
 /*          Footer           */
@@ -265,4 +285,66 @@ footer {
 
 footer *, footer {
     color: var(--color2);
+}
+
+
+/* ========================= */
+/*         Projects          */
+/* ========================= */
+
+.projects {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects__slider {
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.projects__slide {
+    background-color: var(--bg-color);
+    border: 1px solid var(--color2);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px; 
+}
+
+.slide__title {
+    font-size: 1.5em;
+    color: var(--accent-color);
+    margin: 10px 0;
+}
+
+.slide__subtitle {
+    font-size: 1em;
+    color: var(--color1);
+    margin: 8px 0;
+}
+
+.slide__href {
+    border-radius: 16px;
+    background-color: transparent;
+    color: var(--color3);
+    border: var(--accent-color) 1px solid;
+    margin: 16px 0;
+    padding: 4px 8px;
+    width: 92%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slide__href:hover {
+    background-color: darken(var(--accent-color), 10%);
 }

@@ -12,143 +12,213 @@
 
 <body>
     <header>
-        <video src="./video.mp4" autoplay muted loop class="overlay"></video>
-        <div class="header__title">
-            <h1>Меню прямо в телеофне</h1>
-            <p>Наше меню — это то, что вам нужно</p>
+        <div class="container">
+            <video src="./video.mp4" autoplay muted loop class="overlay"></video>
+            <div class="header__title">
+                <h1>Меню прямо в телеофне</h1>
+                <p>Наше меню — это то, что вам нужно</p>
+            </div>
+            <button class="mainButton" id="~goTo[._start]">Почему?</button>
         </div>
-        <button class="mainButton" id="~goTo[._start]">Почему?</button>
     </header>
 
     <div class="info _start">
-        <h2 class="info__title">Плюсы онлайн меню:</h2>
-        <ul class="info__list">
-            <li>
-                <span class="_main">Современно:</span> <br> Телефоны стали неотъемлемой частью повседневной жизни
-            </li>
-            <li>
-                <span class="_main">Уникально:</span> <br> Выделитесь среди конкурентов с помощью инновационного подхода
-            </li>
-            <li>
-                <span class="_main">Удобно:</span> <br> Вы сможете проще обслуживать посетителей;
-            </li>
-        </ul>
-    </div>
+        <div class="container">
+            <h2 class="info__title">Плюсы онлайн меню:</h2>
+            <ul class="info__list">
+                <li>
+                    <span class="_main">Современно:</span> <br> Телефоны стали неотъемлемой частью повседневной жизни
+                </li>
+                <li>
+                    <span class="_main">Уникально:</span> <br> Выделитесь среди конкурентов с помощью инновационного
+                    подхода
+                </li>
+                <li>
+                    <span class="_main">Удобно:</span> <br> Вы сможете проще обслуживать посетителей;
+                </li>
+            </ul>
+        </div>
 
-    <div class="quote">
-        Интровертам и малообщительным людям будет лучше к вам заходить, так как заказ происходит прямо с сайта
-    </div>
+        <div class="container">
+            <div class="quote">
+                Интровертам и малообщительным людям будет лучше к вам заходить, так как заказ происходит прямо с сайта
+            </div>
+        </div>
 
-    <div class="info">
-        <p>Меню, которое мы вам предоставляем отличается от других своей доступной ценой. В отличии от конкурентов мы
-            предлагаем сайт, построенный на прототипе, что улучшает цену</p>
+        <div class="info">
+            <div class="container">
+                <p>Меню, которое мы вам предоставляем отличается от других своей доступной ценой. В отличии от
+                    конкурентов мы предлагаем сайт, построенный на прототипе, что улучшает цену</p>
+            </div>
+        </div>
     </div>
 
     <div class="price">
-        <h2>Прайс-лист</h2>
-        <div class="price__slider">
-            <div class="price__card">
-                <div class="card__price _left">15$ <span class="_textMini">в месяц</span></div>
-                <hr>
-                <div class="card__price _right">40$ <span class="_textMini">навсегда*</span></div>
-                <h3 class="card__title">Basic</h3>
-                <p class="card__description">Самая доступная по цене и в связи с этим ограниченная версия. Достойное
-                    качество дизайна и небольшой функционал. Идеально подходит для небольших заведений</p>
-                <h3 class="card__title">Включает в себя:</h3>
-                <ul class="card__list">
-                    <li class="card__function">
-                        <i class="fas fa-xmark"></i>
-                        <p>Google Таблица с меню</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-xmark"></i>
-                        <p>Вызов официанта</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-xmark"></i>
-                        <p>Возможность отправить заказ</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-check"></i>
-                        <p>Несколько языков</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-xmark"></i>
-                        <p>Улучшенные анимации</p>
-                    </li>
-                </ul>
+        <div class="container">
+            <h2>Прайс-лист</h2>
+            <div class="price__slider">
+                <div class="price__card">
+                    <div class="price__cost">
+                        <div class="card__price _left">15$ <span class="_textMini">в месяц</span></div>
+                        <hr>
+                        <div class="card__price _right">40$ <span class="_textMini">навсегда*</span></div>
+                    </div>
+                    <div class="price__descr">
+                        <h3 class="card__title">Basic</h3>
+                        <p class="card__description">Самая доступная по цене и в связи с этим ограниченная версия.
+                            Достойное
+                            качество дизайна и небольшой функционал. Идеально подходит для небольших заведений <br> *Но изменение меню - 3$</p>
+                    </div>
+                    <div class="price__includes">
+                        <h3 class="card__title">Включает в себя:</h3>
+                        <ul class="card__list">
+                            <li class="card__function">
+                                <i class="fas fa-xmark"></i>
+                                <p>Google Таблица с меню</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-xmark"></i>
+                                <p>Вызов официанта</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-xmark"></i>
+                                <p>Возможность отправить заказ</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-check"></i>
+                                <p>Несколько языков</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-xmark"></i>
+                                <p>Улучшенные анимации</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://thissasha.github.io/menuBasic">
+                        <button class="card__button">Демо-версия
+                        </button></a>
+                </div>
+                <div class="price__card">
+                    <div class="price__cost">
+                        <div class="card__price _left">25$ <span class="_textMini">в месяц</span></div>
+                        <hr>
+                        <div class="card__price _right">100$ <span class="_textMini">навсегда</span></div>
+                    </div>
+                    <div class="price__descr">
+                        <h3 class="card__title">Pro</h3>
+                        <p class="card__description">Наилучшее соотношение цена/качество. Вполне качественный интерфейс,
+                            самостоятельная настройка меню и увеличенный функционал</p>
+                    </div>
+                    <div class="price__includes">
+                        <h3 class="card__title">Включает в себя:</h3>
+                        <ul class="card__list">
+                            <li class="card__function">
+                                <i class="fas fa-check"></i>
+                                <p>Google Таблица с меню</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-xmark"></i>
+                                <p>Вызов официанта</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-xmark"></i>
+                                <p>Возможность отправить заказ</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-check"></i>
+                                <p>Несколько языков</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-check"></i>
+                                <p>Улучшенные анимации</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://thissasha.github.io/menuPro">
+                        <button class="card__button">Демо-версия
+                        </button></a>
+                </div>
+                <div class="price__card">
+                    <div class="price__cost">
+                        <div class="card__price _left">50$ <span class="_textMini">в месяц</span></div>
+                        <hr>
+                        <div class="card__price _right">220$ <span class="_textMini">навсегда</span></div>
+                    </div>
+                    <div class="price__descr">
+                        <h3 class="card__title">Premium</h3>
+                        <p class="card__description">В эту версию входит всё, что может пригодиться. Наивысшее качество
+                            анимаций, максимально удобный и продуманный интерфейс. Вы получите QR-Коды к столам, чтобы
+                            можно
+                            было сделать заказ онлайн</p>
+                    </div>
+                    <div class="price__includes">
+                        <h3 class="card__title">Включает в себя:</h3>
+                        <ul class="card__list">
+                            <li class="card__function">
+                                <i class="fas fa-check"></i>
+                                <p>Google Таблица с меню</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-check"></i>
+                                <p>Вызов официанта</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-check"></i>
+                                <p>Возможность отправить заказ</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-check"></i>
+                                <p>Несколько языков</p>
+                            </li>
+                            <li class="card__function">
+                                <i class="fas fa-check"></i>
+                                <p>Улучшенные анимации</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://thissasha.github.io/menuPremium">
+                        <button class="card__button">Демо-версия
+                        </button></a>
+                </div>
             </div>
-            <div class="price__card">
-                <div class="card__price _left">25$ <span class="_textMini">в месяц</span></div>
-                <hr>
-                <div class="card__price _right">100$ <span class="_textMini">навсегда</span></div>
-                <h3 class="card__title">Pro</h3>
-                <p class="card__description">Наилучшее соотношение цена/качество. Вполне качественный интерфейс,
-                    самостоятельная настройка меню и увеличенный функционал</p>
-                <h3 class="card__title">Включает в себя:</h3>
-                <ul class="card__list">
-                    <li class="card__function">
-                        <i class="fas fa-check"></i>
-                        <p>Google Таблица с меню</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-xmark"></i>
-                        <p>Вызов официанта</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-xmark"></i>
-                        <p>Возможность отправить заказ</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-check"></i>
-                        <p>Несколько языков</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-check"></i>
-                        <p>Улучшенные анимации</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="price__card">
-                <div class="card__price _left">50$ <span class="_textMini">в месяц</span></div>
-                <hr>
-                <div class="card__price _right">220$ <span class="_textMini">навсегда</span></div>
-                <h3 class="card__title">Premium</h3>
-                <p class="card__description">В эту версию входит всё, что может пригодиться. Наивысшее качество
-                    анимаций, максимально удобный и продуманный интерфейс. Вы получите QR-Коды к столам, чтобы можно
-                    было сделать заказ онлайн</p>
-                <h3 class="card__title">Включает в себя:</h3>
-                <ul class="card__list">
-                    <li class="card__function">
-                        <i class="fas fa-check"></i>
-                        <p>Google Таблица с меню</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-check"></i>
-                        <p>Вызов официанта</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-check"></i>
-                        <p>Возможность отправить заказ</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-check"></i>
-                        <p>Несколько языков</p>
-                    </li>
-                    <li class="card__function">
-                        <i class="fas fa-check"></i>
-                        <p>Улучшенные анимации</p>
-                    </li>
-                </ul>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="container">
+            <h2>Готовые проекты</h2>
+            <div class="projects__slider">
+                <div class="projects__slide">
+                    <h3 class="slide__title">Название кафе 1</h3>
+                    <p class="slide__subtitle">Тип: Basic</p>
+                    <a href="https://example.com/project1">
+                        <button class="slide__href">Ссылка на проект</button>
+                    </a>
+                </div>
+                <div class="projects__slide">
+                    <h3 class="slide__title">Название кафе 2</h3>
+                    <p class="slide__subtitle">Тип: Pro</p>
+                    <a href="https://example.com/project2">
+                        <button class="slide__href">Ссылка на проект</button>
+                    </a>
+                </div>
+                <div class="projects__slide">
+                    <h3 class="slide__title">Название кафе 3</h3>
+                    <p class="slide__subtitle">Тип: Premium</p>
+                    <a href="https://example.com/project3">
+                        <button class="slide__href">Ссылка на проект</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
-        by <a href="https://tinyurl.com/thisSasha/myPortfolio">thisDevSasha</a> <br>
-        © Фрилансер Александр. Все права защищены.
+        <div class="container">
+            by <a href="https://tinyurl.com/thisSasha/myPortfolio">thisDevSasha</a> <br>
+            © Фрилансер Александр. Все права защищены.
+        </div>
     </footer>
-
 
     <script src="https://kit.fontawesome.com/2c09f7fb88.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
