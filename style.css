@@ -86,6 +86,11 @@ header {
     color: var(--color1);
 }
 
+.header__img {
+    width: 200px;
+    margin-bottom: 80px;
+}
+
 /* ========================= */
 /*        Global           */
 /* ========================= */
