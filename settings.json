@@ -1,0 +1,14 @@
+{
+  "git.decorations.enabled": false,
+  "scm.diffDecorations": "none",
+  "editor.gutter.modifiedBackground": "transparent",
+  "editor.gutter.addedBackground": "transparent",
+  "editor.gutter.deletedBackground": "transparent",
+  "git.enableStatusBarSync": false,
+  "git.enabled": false,
+  "scm.providerCountBadge": "hidden",
+  "git.decorations.timestamps": false,
+  "scm.diffDecorationsGutterVisibility": "hidden",
+  "scm.diffDecorationsGutterWidth": 0,
+  "scm.diffDecorationsGutterAction": "none"
+}
