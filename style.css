@@ -330,7 +330,7 @@ footer {
 .projects__slider {
   overflow-y: hidden;
   overflow-x: auto;
-  padding: 24px 12px 24px 0;
+  padding: 24px 0;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
