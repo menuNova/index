@@ -74,6 +74,7 @@ h2 {
   left: 0;
   height: 100vh;
   width: 100vw;
+  background: url(./image.png);
   object-fit: cover;
   z-index: -1;
 }
@@ -202,6 +203,7 @@ header {
   border-radius: 16px;
   padding: 20px;
   max-width: 500px;
+  width: 80vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   flex: 0 0 auto;
@@ -214,7 +216,7 @@ header {
 .price__slider {
   overflow-y: hidden;
   overflow-x: auto;
-  padding: 24px;
+  padding: 12px 24px 12px 0;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -222,7 +224,7 @@ header {
 }
 
 .card__price {
-  font-size: 2em;
+  font-size: 1.7em;
   color: var(--main-color);
   font-weight: bold;
 }
@@ -233,14 +235,14 @@ header {
 }
 
 .card__title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 20px 0;
   text-align: left;
   color: var(--accent-color);
 }
 
 .card__description {
-  font-size: 1em;
+  font-size: 0.85em;
   color: var(--color1);
   text-align: left;
   margin-bottom: 20px;
@@ -258,6 +260,7 @@ header {
 .card__function {
   display: flex;
   align-items: center;
+  font-size: 0.85em;
   color: var(--main-color);
 }
 
@@ -327,7 +330,7 @@ footer {
 .projects__slider {
   overflow-y: hidden;
   overflow-x: auto;
-  padding: 24px;
+  padding: 24px 12px 24px 0;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
