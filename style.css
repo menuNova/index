@@ -282,12 +282,10 @@ hr {
 }
 
 .card__button {
-  border-radius: 16px;
+  border-radius: 20px;
   background-color: transparent;
+  height: 40px;
   border: 1px solid var(--accent-color);
-}
-
-.card__button {
   color: var(--color3);
   text-decoration: none;
   width: 100%;
@@ -364,13 +362,14 @@ footer {
 }
 
 .slide__href {
-  border-radius: 16px;
+  border-radius: 20px;
   background-color: transparent;
   color: var(--color3);
   border: var(--accent-color) 1px solid;
   margin: 16px 0;
   padding: 4px 8px;
   width: 92%;
+  height: 40px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
