@@ -377,3 +377,20 @@ footer {
 .slide__href:hover {
   background-color: darken(var(--accent-color), 10%);
 }
+
+/* ========================= */
+
+
+.accent {
+  color: rgb(34, 87, 105);
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.accent:active, .accent:hover {
+  font-weight: 500;
+}
+
+ul:last-child {
+  margin-bottom: 40px;
+}
